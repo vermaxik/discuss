@@ -2,6 +2,7 @@ defmodule Discuss.Router do
   use Discuss.Web, :router
 
   pipeline :browser do
+    plug Ueberauth
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_flash

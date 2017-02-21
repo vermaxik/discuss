@@ -5,7 +5,6 @@ defmodule Discuss.Plugs.SetUser do
 
   alias Discuss.Repo
   alias Discuss.User
-  alias Discuss.Router.Helpers
 
 
   def init(_params) do
